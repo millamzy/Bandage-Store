@@ -1,0 +1,153 @@
+
+  
+  body {
+    padding: 0px;
+    margin: 0px;
+  }
+  /* Global Styles */
+  ul {
+    list-style-type: none;
+    padding: 0px;
+  }
+
+  .menu_list{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  
+  /* Navbar */
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 9rem;
+    align-items: center;
+
+    margin:20px 0px;
+   
+  }
+
+  .navbar > h3{
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .nav1{
+    display: flex;
+    gap: 21rem;
+  }
+ 
+
+  .login{
+    display: flex;
+    gap: 10px;
+   
+  }
+
+
+  .logiside{
+     display: flex;
+     gap: 10px;
+  }
+
+
+
+  .textlogin{
+    font-size: 14px;
+    font-weight: 700;
+    color: #23A6F0;
+  }
+ 
+  .cartcount > p, .lovetext > p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #23A6F0;
+  }
+  
+
+  
+  /* Mobile Navbar */
+  .menu_icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .mobileNav_menu_container {
+    position: relative;
+  }
+  
+  .mobileNav_menu_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    background: dodgerblue;
+    border-radius: 4px;
+    color: white;
+    transition: ease all 0.4s;
+  }
+  
+  .mobileNav_container {
+    display: none;
+    padding: 10px;
+  }
+  
+  .mobileNav_closed {
+    top: -300px;
+  }
+  
+  .mobileNav_open {
+    top: 10px;
+  }
+
+  .cartcount, .lovetext{
+    display: flex;
+    gap: 5px;
+  }
+
+
+  @media only screen and (max-width:919px) {
+    .logiside{
+      gap: 5px;
+    }
+  }
+  /* Media Queries */
+  @media only screen and (max-width: 600px) {
+    /* Navbar Media Queries */
+    .navbar {
+      display: none;
+    }
+    /* Mobile Navbar Media Queries */
+    .mobileNav_container {
+      display: flex;
+      flex-direction: column;
+      
+      
+    }
+     
+    .mobileNav_open{
+      color: aqua;
+      background-color: #23A6F0;
+
+    }
+
+    .home , .products, .price, .contact {
+      color: #737373;
+      font-size: 30px;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      margin-top: 5px;
+    }
+
+    
+
+
+  }
+  

@@ -1,0 +1,97 @@
+.container{
+    width: 1,083px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9rem;
+    
+}
+
+.maincontent{
+width: 691px;
+display: flex;
+flex-direction: column;
+text-align: center;
+
+}
+
+.maincontent > h4{
+    font-size: 20px;
+    font-weight: 400;
+    color: #737373;
+    /* width: 191px;
+    height: 24px; */
+}
+
+.maincontent > h3{
+    margin-top: 1rem;
+    font-size: 24px;
+    font-weight: 700;
+    color: #737373;
+    letter-spacing: 0.1px;
+}
+
+.maincontent > p{
+    margin-top: 0.5rem;
+    font-size:14px;
+    font-weight: 400;
+    color: #737373;
+    letter-spacing: 0.2px;
+}
+
+
+.row{
+   
+    margin: 4rem;
+    /* margin-left: 23px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 11px;
+    flex-wrap: wrap;
+    width: 1,083px;
+}   
+
+
+
+.loadMoreButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #FFFFFF;
+    color: #23A6F0 ;
+    border: 1px solid #23A6F0 ;
+    border-radius: 4px;
+    width: 261px;
+    height: 52px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .loadMoreButton:hover {
+    background-color: #0056b3;
+  }
+
+  @media only screen and (max-width: 600px) {
+     
+    .container{
+      margin-top:-12px ;
+      margin-left: 25px;
+    }
+    .maincontent {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 279px;
+    
+    
+     
+    }
+
+
+    .maincontent > h4{
+      display: none;
+    }
+ 
+  }

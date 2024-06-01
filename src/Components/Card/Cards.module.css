@@ -1,0 +1,88 @@
+*{
+    text-decoration: none;
+}
+
+.movcard{
+    width:183px;
+    height:162px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 12rem;
+}
+
+/* .movcard :hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+} */
+
+.movcard > img{
+    width: 183px;
+    height: 238px;
+}
+
+.movcard > h5{
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+    font-size: 16px;
+    font-weight: 700;
+    max-width: 166px;
+    height: 24px;
+    margin-bottom: 15px;
+   color:#252B42;
+    
+}
+
+.movcard > p {
+    margin-top: 1rem;
+    font-size: 14px;
+    font-weight: 700;
+    height: 24px;
+    color:#737373;
+    letter-spacing: 0.2px;
+    width: 146px;
+    margin: auto;
+   
+}
+
+.price > h5{
+width: 108px;
+height: 24px;
+font-size: 16px;
+font-weight: 700;
+color: #BDBDBD;
+margin: auto;
+margin-top: 10px;
+
+}
+.price2{
+    width: 108px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #23856D;
+    
+}
+
+@media only screen and (max-width: 600px) {
+   
+    .movcard {
+        display:flex;
+        /* flex-direction: column; */
+    /* background-color: #23856D; */
+    justify-content: center;
+     text-align: center;
+     width:295px;
+
+    }
+
+    .movcard > img {
+    margin: auto;
+  
+  
+    }
+
+
+   
+ 
+  }
