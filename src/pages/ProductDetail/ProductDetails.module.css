@@ -1,5 +1,143 @@
+
+
 .top{
     width: 100%;
     height: 92px;
-    padding: 24px, 0px, 24px, 0px ;
+    padding: 34px 0 34px 37px;
+    display: flex;
+    gap: 15px;
+    
+    
+    
+}
+
+.top_home{
+    font-size:14px ;
+    font-weight: 700;
+    color: #252B42;
+    margin: 0 0 0 6px;
+    display: block;
+    gap: 6px;
+}
+
+.top_shop{
+    font-size:14px ;
+    font-weight: 700;
+    color: #BDBDBD;
+    margin: 0 0 0 6px;
+    display: block;
+    gap: 6px;
+}
+.top > img{
+    width: 8.62px;
+    height: 16px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+   
+    
+}
+
+.price1{
+    font-size: 24px;
+    font-weight: 700;
+    color: #252B42;
+    margin-top: 2opx;
+    margin-bottom: 5px;
+}
+
+.section{
+        display: flex;
+        align-items: center;
+        gap: 34px;
+        flex-wrap: wrap;
+    /* padding: 0px, 0px, 48px, 0px; */
+    
+
+
+}
+
+.section > img{
+  background-color: white;
+  width: 510px;
+  height: 471px;
+}
+
+.section > h4{
+    width: 157px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #252B42;
+}
+
+
+.section > p{
+    width: 157px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #252B42;
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+    direction: row;
+}
+
+.star-rating > h6{
+   font-size: 14px;
+   font-weight: 700;
+   color: #737373;
+   margin-left: 20px;
+}
+
+
+
+.star {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+.star:hover,
+.star:hover ~ .star {
+    color: gold;
+}
+
+.star.selected {
+    color: gold;
+}
+
+.star.selected ~ .star {
+    color: #ccc;
+}
+
+hr{
+    margin-top: 4rem;
+    width: 445px;
+    margin-bottom: 1rem;
+    border: 1px solid #BDBDBD;
+}
+
+.bottom{
+   margin-top: 3rem;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10px;
+    
+}
+
+button{
+    width:148px;
+    height:44px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #23A6F0;
+    color: #FFFFFF;
+    border: 1px solid #23A6F0;
+    border-radius: 5px;
 }
