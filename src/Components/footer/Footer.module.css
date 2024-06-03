@@ -26,6 +26,10 @@ a{
 
 /* ========== END GLOBAL STYLES ========== */
 
+.footer{
+    padding: 0;
+}
+
 .foot_brand_section{
     display: flex;
     align-items: center;
@@ -39,15 +43,24 @@ a{
 }
 
 .foot_features{
-    display: grid;
+    display: grid;  
+    grid-template-columns: repeat(5,1fr);
     gap: 1rem 2rem;
     grid-template-columns: repeat(5, 1fr);
     padding: 1rem 11rem;
+    /* padding: 50px 195px 2px 170px; */
+    width: 1,041px;
+
 }
 .foot_item{
     display: grid;
     row-gap: 0.5rem;
     margin-bottom: 1.5rem;
+    width: 130px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #252B42;
+    /* background-color: red; */
 }
 
 .copyright_section{
@@ -56,4 +69,98 @@ a{
     color: var(--Navs-black);
     font-size: 14px;
     font-weight: 700;
+}
+
+style.foot_item1 > h5, style.foot_item2 > h5, style.foot_item3 > h5,style.foot_item4 > h5, style.foot_item5 > h5{
+    font-size: 16px;
+    font-weight: 700;
+    color: #252B42;
+}  
+
+
+
+.foot_item5{
+
+}
+.foot_item5 > form{
+    display: flex; 
+   }
+
+   .foot_form{
+    width: 321px;
+    height: 58px;
+    /* margin: 0; */
+}
+
+.foot_form > input{
+    font-size: 15px;
+    padding: 15px 0 15px 20px;
+}
+
+.foot_form > button{
+    width: 117px;
+    height: 58px;
+    border-radius: 0px, 5px, 5px, 0px;
+    color: #E6E6E6;
+    /* margin: 0; */
+}
+.foot_item5 > p{
+    margin-top: -1rem;
+    font-size: 12px;
+    font-weight: 400;
+    color: #737373;
+   }
+
+@media only screen and (max-width: 414px) {
+    .footer{
+      width:400px ;
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 0;
+      padding: 0;
+     
+    }
+    
+    .foot_features{
+        width: 321px;
+        grid-template-columns: 1fr;
+        padding-left: 3rem;
+    
+    }
+
+    .foot_brand_section{
+        padding-left: 4rem;
+        width: 400px;
+    }
+
+    .foot_brand_section > h3{
+
+        display: none;
+    }
+
+    .copyright_section{
+        width: 100%;
+        padding-right: 10rem;
+        background-color:#FAFAFA;
+       
+        padding: 25px 0 25px 40px ;
+    }
+    .copyright_section > h6{
+        display: grid;
+        grid-template-columns: 1fr;        
+        margin: 0;
+        padding: 0;
+ 
+   
+    }
+
+    .foot_social{
+      padding-right: 9rem;
+    }
+
+    .foot_item5 > p{
+        margin-top: 1rem;
+      
+       }
+
 }

@@ -1,16 +1,18 @@
 import React from 'react'
 import style from './Footer.module.css'
 import { Link } from 'react-router-dom'
-
+import fbk from '../../../public/images/facebook1.png'
+import ig from '../../../public/images/instagram1.png'
+import twitter from '../../../public/images/twitter1.png'
 const Footer = () => {
   return (
     <div className={style.footer}>
         <div className={style.foot_brand_section}>
             <h3>Bandage</h3>
             <div className={style.foot_social}>
-                <img src="images/footer/fb.png" alt="" />
-                <img src="images/footer/ig.png" alt="" />
-                <img src="images/footer/x.png" alt="" />
+                <img src={fbk} alt="" />
+                <img src={ig} alt="" />
+            <img src={twitter } alt="" />
             </div>
         </div>
         <div className={style.foot_features}>
@@ -44,7 +46,7 @@ const Footer = () => {
             </div>
             <div className={`${style.foot_item5} ${style.foot_item}`}>
                 <h5>Get In Touch</h5>
-                <form action="">
+                <form  className={style.foot_form} action="">
                     <input type="text" placeholder='Your Email'/>
                     <button>Subscribe</button>
                 </form>

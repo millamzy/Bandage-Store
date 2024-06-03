@@ -1,135 +1,62 @@
-.container{
+.wrap {
+    box-sizing: border-box;
     display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 0 48px;
-    width: 1,128px;
-    height: 682px;
-    padding: 80px, 0px, 80px, 0px;
-    gap: 30px;
-    justify-content: space-between;
-    margin: 84px;
+    padding: 80px 0;
 }
 
+.container{
+    width: 1128px;
+    display: flex;
+    justify-content: space-between;
+}
 
-.right{
+.left{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left > section {
+    width: 438px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 438px;
-    
-}
-
-.right > h3{
-    width: 300px;
-    height: 32px;
-    font-weight: 700;
-    font-size: 24px;
-    color: #252B42;
-   
-}
-
-.right > h6{
-    width: 451px;
-    height:48px;
-    font-weight: 700;
-    font-size: 14px;
-    color: #252B42;
-    text-align: center;
-    line-height: 24px;
-   
-}
-
-
-.name{
-    margin-top: 0.5rem;
-width: 100px;
-height: 24px;
-font-size: 14px;
-font-weight: 700;
-color: #23A6F0;
-}
-
-.discription{
-    width:65px;
-    height: 24px;
-    font-size: 14px;
-    font-weight: 700;
-    text-align: center;
-    color: #252B42;
-}
-
-.right > img{
-    margin-top:2rem ;
-}
-
-
-.left{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: auto auto;
-    gap: 20px;
-    
-}
-
- 
-@media screen and (max-width: 700px){
-
-    .cover{
-
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       text-align: center;
-       justify-content: center;
-        background-color: #23A6F0;
-        width: 100%;
-        padding:0 48px ;
-    }
-    .container{
-       display: grid;
-       grid-template-columns: 1fr;
-       align-items: center;
-       width:358px;
-    
-    }
-
-    
-.right{
-
-    width: 351px;
     gap: 28px;
 }
 
-.right > h3{
-    width:181px;
-
+.left > section > h6 {
+    text-align: center;
 }
 
-.right > h6{
- width: 288px;
- height: 72px;
-   
+.right{
+    width: 45%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-.name{
- margin-bottom: -1.5rem;
-}
-
-.discription{
-    /* margin-bottom: -2rem; */
-}
-
-.left{
- /* width:364px; */
- background-color: #23A6F0;
- margin-right: 100px;
-}
-
-.left > img{
-   width: 112px;
-   width: 112px;
-   }
-    
+@media only screen and (max-width: 414px){
+    .wrap {
+        width: 400px;
     }
-    
+
+    .container {
+        width: 400px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 37px;
+    }
+
+    .left, .right {
+        width: 370px;
+    }
+
+    .right > img {
+        width: 112px;
+        height: 112px;
+    }
+}

@@ -1,100 +1,50 @@
-*{
+.container {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family:Montserrat;
-}
-.contain{
-  width: 100%;
+    width: 100%;
     height: 58px;
-    background-color: #23856D;
+    background-color: rgba(35, 133, 109, 1);
+    font-family: 'Montserrat';
+    font-weight: 700;
     display: flex;
     align-items: center;
+}
+
+.content {
+    width: 100%;
+    height: 46px;
+    display: flex;
     justify-content: space-between;
-    padding: 20px 30px;
-}
-
-.topsideA{
-    display: flex;
     align-items: center;
-    gap: 30px;
-    
+    padding: 0 24px;
 }
 
-.mostphone{
+.left_section {
     display: flex;
-    align-items: center;
-    color: #FFFFFF;
-    text-align: center;
-
-}
-
-.emailside{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    gap: 5px;    
-    color: #FFFFFF;
-}
-
-.phonNumber{
-    font-size: 14px;
-    width: 104px;
-    height: 24px;
-    font-weight: 700;
-}
-.emailText{
-    font-size: 14px;
-    width: 219px;
-    height: 24px;
-    font-weight: 700;
-}
-
-.mostphone > img , .emailside >img{
-    width: 16px;
-    margin-top: -6px;
-}
-
-
-.topsideB,.follow{
-    font-size: 14px;
-    font-weight: 700;
-    color: #FFFFFF;
-}
-
-
-.topsideC{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
 }
 
-.topicon{
+.left_section > p {
     display: flex;
-    gap:10px;
+    align-items: center;
+    gap: 5px;
+    color: white;
 }
 
-.topicon > img{
-   width: 16px;
-   height: 16px;
-   color: #FFFFFF;
- 
-} 
-
-.topicon > .ins{
-    width: 16px;
-    height: 16px;
-   
+.middle_section > p {
+    color: white;
 }
 
+.right_section {
+    display: flex;
+    align-items: center;
+}
 
+.right_section > p {
+    color: white;
+}
 
-
-
-@media only screen and (max-width: 600px) {
-    /* Navbar Media Queries */
-    .contain {
-      display: none;
+@media screen and (max-width: 414px) {
+    .container {
+        display: none;
     }
 }
