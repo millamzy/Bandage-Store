@@ -6,6 +6,8 @@ import Navbar from './Components/Navbar/Navbar';
 import MobileNavbar from './Components/Navbar/MobileNavbar';
  import Topnav from './Components/TopNav/Topnav';
 import ProductDetail from './pages/ProductDetail/ProductDetail';
+import Footer from './Components/footer/Footer.jsx';
+import Cart from '././pages/Cart/Cart.jsx';
 
 function App() {
 
@@ -18,10 +20,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/product/:productId" element={<ProductDetail/>} />
+        <Route path="/Cart" element={<Cart />} />
       </Routes> 
+      <Footer/>
     </BrowserRouter>
 
   )
 }
 
 export default App
+
+

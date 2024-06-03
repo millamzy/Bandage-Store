@@ -141,3 +141,17 @@ button{
     border: 1px solid #23A6F0;
     border-radius: 5px;
 }
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+ 
+
+}
+
+.product > h3{
+    /* background-color: #23A6F0; */
+    margin-left: 5rem;
+    margin-bottom: -7rem;
+}

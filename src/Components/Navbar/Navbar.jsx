@@ -20,29 +20,7 @@ const Navbar = () => {
           <li>Pages</li>
         </ul>
       </div>
-      {/* <div className={styleB.logiside}>
-                  <div className={styleB.login}>
-                    <img src={usericon}/>
-                  
-                          <p className={styleB.textlogin}>Login / Register</p>
-                  </div>
-                  <div className={styleB.loginIcn}>
-                  <div>
-                  <img src={searchicon}/>
-                  </div>
-
-                  <div className={styleB.cartcount}>
-                    <img src={cart}/>
-                    <p className={styleB.cartnum}>1</p>
-                  </div>
-
-                  <div className={styleB.lovetext}>
-                  <img src={love}/>
-                  <p className={styleB.lovenum}>1</p>
-                  </div>
-                  </div>
-                  
-            </div> */}
+    
 
       <div className={styleB.logiside}>
         <div className={styleB.login}>
@@ -50,7 +28,7 @@ const Navbar = () => {
             <img src={usericon} />
           </div>
           <div>
-            <p className={styleB}>Login / Register</p>
+            <p className={styleB.longinn}>Login / Register</p>
           </div>
         </div>
         <div className={styleB.login}>

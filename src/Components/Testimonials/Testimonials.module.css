@@ -42,7 +42,7 @@
 
 
 .name{
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 width: 100px;
 height: 24px;
 font-size: 14px;
@@ -72,6 +72,64 @@ color: #23A6F0;
     
 }
 
-.left > img{
+ 
+@media screen and (max-width: 700px){
+
+    .cover{
+
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       justify-content: center;
+        background-color: #23A6F0;
+        width: 100%;
+        padding:0 48px ;
+    }
+    .container{
+       display: grid;
+       grid-template-columns: 1fr;
+       align-items: center;
+       width:358px;
     
+    }
+
+    
+.right{
+
+    width: 351px;
+    gap: 28px;
 }
+
+.right > h3{
+    width:181px;
+
+}
+
+.right > h6{
+ width: 288px;
+ height: 72px;
+   
+}
+
+.name{
+ margin-bottom: -1.5rem;
+}
+
+.discription{
+    /* margin-bottom: -2rem; */
+}
+
+.left{
+ /* width:364px; */
+ background-color: #23A6F0;
+ margin-right: 100px;
+}
+
+.left > img{
+   width: 112px;
+   width: 112px;
+   }
+    
+    }
+    

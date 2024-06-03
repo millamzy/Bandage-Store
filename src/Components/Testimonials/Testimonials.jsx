@@ -10,13 +10,15 @@ import gird6 from '../../../public/images/gird6.png'
 import gird7 from '../../../public/images/gird7.png'
 import gird8 from '../../../public/images/gird8.png'
 import gird9 from '../../../public/images/gird9.png'
+import startgirl from '../../../public/images/stars girl.png'
  const Testimonials = () => {
   return (
+   <div  className={TestimonialsCss.cover}>
     <div className={TestimonialsCss.container} >
       <div className={TestimonialsCss.right}>
         <h3>What they say about us</h3>
           <img src={user1}/>
-          <img/>
+          <img src ={startgirl}/>
           <h6>Slate helps you see how many more days you need to work to 
            reach your financial goal.</h6>
           <div className={TestimonialsCss.name}>Regina Miles</div>
@@ -34,8 +36,8 @@ import gird9 from '../../../public/images/gird9.png'
         <img src={gird9}/>
 
       </div>
-
     </div>
+    </div>  
   )
 }
 
