@@ -13,30 +13,30 @@ import gird9 from '../../../public/images/gird9.png'
 import startgirl from '../../../public/images/stars girl.png'
  const Testimonials = () => {
   return (
-   <div  className={TestimonialsCss.cover}>
-    <div className={TestimonialsCss.container} >
-      <div className={TestimonialsCss.right}>
-        <h3>What they say about us</h3>
-          <img src={user1}/>
-          <img src ={startgirl}/>
-          <h6>Slate helps you see how many more days you need to work to 
-           reach your financial goal.</h6>
-          <div className={TestimonialsCss.name}>Regina Miles</div>
-          <div className={TestimonialsCss.discription}>Designer</div>
+    <div  className={TestimonialsCss.wrap} >
+      <div className={TestimonialsCss.container} >
+        <div className={TestimonialsCss.left}>
+          <section>
+            <h3>What they say about us</h3>
+            <img src={user1}/>
+            <img src ={startgirl}/>
+            <h6>Slate helps you see how many more days you need to work to reach your financial goal.</h6>
+            <div className={TestimonialsCss.name}>Regina Miles</div>
+            <div className={TestimonialsCss.discription}>Designer</div>
+          </section>
+        </div>
+        <div className={TestimonialsCss.right}>
+          <img src={gird1}/>
+          <img src={gird2}/>
+          <img src={gird3}/>
+          <img src={gird4}/>
+          <img src={gird5}/>
+          <img src={gird6}/>
+          <img src={gird7}/>
+          <img src={gird8}/>
+          <img src={gird9}/>
+        </div>
       </div>
-      <div className={TestimonialsCss.left}>
-        <img src={gird1}/>
-        <img src={gird2}/>
-        <img src={gird3}/>
-        <img src={gird4}/>
-        <img src={gird5}/>
-        <img src={gird6}/>
-        <img src={gird7}/>
-        <img src={gird8}/>
-        <img src={gird9}/>
-
-      </div>
-    </div>
     </div>  
   )
 }

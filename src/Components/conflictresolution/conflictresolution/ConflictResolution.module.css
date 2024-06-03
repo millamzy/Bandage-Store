@@ -1,45 +1,80 @@
-/* ========== START GLOBAL STYLES ========== */
-:root{
-    --TopnavBg: #23856D;
-    --BgColor: #ffffff;
-    --textBlack: #000;
-    --Brand-black: #252B42;
-    --Navs-black: #737373;
-    --SkyBlue: #23A6F0;
-    --body-font: "Montserrat", sans-serif;
-    --BadgeBg:#E74040;
-}
 *{
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: var(--body-font);
-} 
-ul{
-    list-style: none;
 }
-a{
-    text-decoration: none;
-} 
-
-/* ========== END GLOBAL STYLES ========== */
-
-
-
-.conflict_container{
+.container{
+    width:100% ;
+    height:640px;
+    background-image: url(../../../../public/images/backgroundbb.png);  
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 80vh;
-    gap: 2rem;
-    align-items: center;
-    background-image: url(images/conflict/conflict.png);  
+    
+
+}
+.main_container{
+    display: grid;
+   grid-template-columns: 1fr;
+   place-items: center;
+   width:1,050px;
+    height: 640px;
+    padding:160px 195px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; 
+    text-align: center;
 }
-.conflict_container > button{
-    background-color: var(--SkyBlue);
+.main_top_text{
+    
+    height: 24px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #23A6F0;
+
+}
+
+.main_top_text2{
+    margin-top: 30px;
+    width: 571px;
+    height: 100px;
+    font-size: 40px;
+    font-weight: 700;
+  
+    line-height: 50px;
+    color: #252B42;
+
+}
+
+.main_container > p{
+    margin-top: 30px;
+    width: 447px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #737373;
+
+}
+
+.main_container > h5{
+    margin-top: 30px;
+    width: 80px;
+    height: 32px;
+    font-size:24px;
+    font-weight: 700;
+    line-height:32px;
+    color: #23856D;
+
+}
+
+
+
+
+
+.main_container > button{
+    margin-top: 30px;
+    width: 292px;
+    height: 52px;
+    font-size: 14px;
+    font-weight: 700;
     color: var(--BgColor);
     border: 1px solid var(--SkyBlue);
     padding: 15px 40px 15px 40px;
@@ -57,3 +92,82 @@ a{
     display: flex;
     gap: 1rem;
 }
+
+/* @media only screen and (max-width: 414px){
+
+    .container{
+        width: 414px;
+          background-image: url(../../../../public/images/backgroundmm.png);
+          align-items: center;
+    }
+
+    .main_container > h6{
+       width: 209px;
+    
+    }
+    
+    .main_container > p{
+        width: 447px;
+        height: 40px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #737373;
+    
+    }
+
+   
+} */
+
+
+@media only screen and (max-width: 414px) {
+    .container {
+      width: 100%; 
+      background-image: url('../../../../public/images/backgroundmm.png');
+      background-size: cover;
+      height: auto;
+
+      box-sizing: border-box;
+    }
+  
+    .main_container {
+      padding: 16px;
+      width: 100%;
+      align-items: center;
+      height: auto;
+     
+    }
+
+    .main_top_text {
+        font-size: 14px;
+      }
+    
+  
+      .main_top_text2{
+        width: 368px;
+        height: 200;
+        text-align: center;
+      line-height: 50px; 
+    }
+  
+    .main_container > p {
+        margin-top: 10rem;
+      width: 287px; 
+      
+    }
+  
+    .main_container > h5 {
+      margin-top: 8rem; 
+      position: absolute;
+    }
+  
+    .main_container > button {
+        margin-top: 3rem;
+      width: 100%;
+      max-width: 292px; 
+    }
+  
+    .foot_brand_section {
+      padding: 2rem 1rem; 
+    }
+  }

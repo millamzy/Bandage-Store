@@ -22,7 +22,7 @@ const FeaturedProducts = () => {
   const displayedItems = data.products.slice(0, visibleCount).map((item) => (
     <Cards
       key={item.id}
-      imageUrl={item.thumbnail}
+      imageUrl={item.images}
       title={item.title}
       category={item.category}
       price={item.price}
