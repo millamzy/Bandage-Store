@@ -8,7 +8,7 @@ import facebook from '../../../public/images/facebk.png'
 import twitter from '../../../public/images/x.png'
 
 const Topnav = () => {
-    return (
+    return ( 
         <header className={style.container}>
             <div className={style.content}>
                 <section className={style.left_section}>
