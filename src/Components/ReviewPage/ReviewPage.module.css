@@ -1,0 +1,76 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* padding: 10px 196px; */
+}
+
+.reviewUL{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 72px;
+
+}
+
+.reviewIL{
+    padding: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #737373;
+}
+
+.Review_section{
+   display: flex;
+   justify-content: space-between;
+    gap: 30px;
+    margin: 24px 192px;
+}
+.left{
+   width:599px;
+   height:327px;
+}
+
+.left > h3{
+    width: 367px;
+    height: 32px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #252B42;
+    
+}
+.text1{
+    margin-top: 30px;
+    width: 513px;
+    height: 60px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height:20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+.text2{
+    padding-left: 24px;
+    margin-top: 30px;
+    width: 480px;
+    height: 60px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height:20px;
+    letter-spacing: 0.2px;    
+    color: #737373;  
+    border-left: 3px solid #23856D;
+}
+.text3{
+    margin-top: 30px;
+    width: 513px;
+    height: 60px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height:20px;
+    letter-spacing: 0.2px;    
+    color: #737373;   
+}
+

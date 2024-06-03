@@ -3,6 +3,7 @@ import { useGetProductsQuery } from '../../Redux/productsApi';
 import featureCSS from '../FeaturedProducts/FeaturedProducts.module.css';
 import Cards from '../../Components/Card/Cards';
 
+
 const FeaturedProducts = () => {
   const { data, error, isLoading } = useGetProductsQuery();
   const [visibleCount, setVisibleCount] = useState(10);
@@ -33,11 +34,6 @@ const FeaturedProducts = () => {
 
   return (
     <div className={featureCSS.container}>
-      <div className={featureCSS.maincontent}>
-        <h4>Featured Products</h4>
-        <h3>BESTSELLER PRODUCTS</h3>
-        <p>Problems trying to resolve the conflict between</p>
-      </div>
 
       <div className={featureCSS.row}>
         {displayedItems}

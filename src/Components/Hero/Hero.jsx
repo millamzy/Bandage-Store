@@ -1,9 +1,5 @@
 import React from 'react'
 import design from '../Hero/Hero.module.css'
-import imaplate from '../../../public/images/imaplate.png'
-import item1 from '../../../public/images/item1.png'
-import creams from '../../../public/images/creams.png'
-import light from '../../../public/images/light.png'
 const Hero = () => {
     return (
         <div className={design.container}>
