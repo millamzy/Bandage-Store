@@ -77,11 +77,6 @@ style.foot_item1 > h5, style.foot_item2 > h5, style.foot_item3 > h5,style.foot_i
     color: #252B42;
 }  
 
-
-
-.foot_item5{
-
-}
 .foot_item5 > form{
     display: flex; 
    }
