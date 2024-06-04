@@ -9,6 +9,9 @@ import classNames from 'classnames'
 import searchicon from '../../../public/images/isearch.png'
 import shopcart from '../../../public/images/shopping-cart.png'
 import toggle from '../../../public/images/menu_icon.png'
+import classnames from 'classnames';
+
+
 
 const Navbar = () => {
 

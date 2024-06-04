@@ -5,12 +5,12 @@ import Navbar from './Components/Navbar/Navbar';
 import ProductDetail from './pages/ProductDetail/ProductDetail';
 import Footer from './Components/footer/Footer.jsx';
 import Cart from './pages/Cart/Cart';
-import Topnav from './Components/Topnav/Topnav.jsx';
+
 
 function App() {
   return (
     <BrowserRouter>
-      <Topnav/>
+      
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
