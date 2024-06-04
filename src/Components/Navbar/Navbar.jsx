@@ -10,6 +10,7 @@ import searchicon from '../../../public/images/isearch.png'
 import shopcart from '../../../public/images/shopping-cart.png'
 import toggle from '../../../public/images/menu_icon.png'
 import classnames from 'classnames';
+import { Link } from 'react-router-dom'
 
 
 
@@ -24,7 +25,9 @@ const Navbar = () => {
     return (
         <nav className={design.container}>
             <section className={design.title}>
+                <Link to="/">
                 <h3>Bandage</h3>
+                </Link>
             </section>
             <section className={design['nav-links']}>
                 <ul>

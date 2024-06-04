@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { updateQuantity, removeFromCart } from '../../Redux/cartSlice';
 import cartCSS from './Cart.module.css';
 import Vector4 from '../../../public/images/Vector4.png'
+import Navbar from '../../Components/Navbar/Navbar';
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.items);
@@ -30,6 +31,8 @@ const Cart = () => {
   const totalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
 
   return (
+    <>
+    <Navbar/>
    <div className={cartCSS.wrap}>
     <div className={cartCSS.smallnav}>
       <div>Home</div>
@@ -67,6 +70,7 @@ const Cart = () => {
       )}
     </div>
   </div>   
+  </>
   );
 };
 
