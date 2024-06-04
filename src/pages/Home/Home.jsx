@@ -7,10 +7,13 @@ import PracticeAdvice from '../PracticeAdvice/PracticeAdvice'
 import Testimonials from '../../Components/Testimonials/Testimonials';
 import HeaderProducts from '../FeaturedProducts/HeaderProducts.jsx';
 import ConflictResolution from '../../Components/conflictresolution/conflictresolution/ConflictResolution.jsx';
+import Topnav from '../../Components/Topnav/Topnav.jsx'
+import Navbar from '../../Components/Navbar/Navbar.jsx';
 const Home = () => {
   return (
     <>
-
+    <Topnav/>
+    <Navbar />
     <Hero/>
     <HeaderProducts/>
     <FeaturedProducts/>
