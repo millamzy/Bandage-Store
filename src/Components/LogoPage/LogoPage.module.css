@@ -18,3 +18,20 @@
     
     
 }
+
+@media screen and (max-width: 414px){
+    .container{
+    
+        width: 400PX;
+       
+        /* height: 175px; */
+    }
+    
+    .Logosection{
+        grid-template-columns: 1fr;
+        position: relative;
+        margin-top: 10rem;
+
+    }
+    }
+    

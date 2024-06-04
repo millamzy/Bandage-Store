@@ -80,7 +80,7 @@ const ProductDetails = () => {
               <hr />
               <img src={productcolo} alt="Product Colors" />
               <div className={styles.bottom}>
-                <button onClick={handleAddToCart}>Add to Cart</button>
+                <button onClick={handleAddToCart}>Select Options</button>
                 <img src={like} alt="Like" />
                 <Link to="/cart">
                   <img src={basket} alt="Basket" />
@@ -90,7 +90,7 @@ const ProductDetails = () => {
             </div>
           </div>
         </div>
-        <div className={styles.bottom}>
+        <div className={styles.bottom1}>
           <ReviewPage />
         </div>
         <div className={styles.product}>

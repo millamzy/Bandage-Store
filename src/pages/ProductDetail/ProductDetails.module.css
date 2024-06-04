@@ -173,7 +173,48 @@ button{
 
 @media screen and (max-width: 414px) {
     .main{
-        width: 400px;
-       
+        width: 400px;  
 }
+
+.section{
+    width:348px;
+    padding: 48px, 0px, 48px, 0px;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.section > img{
+    width:348px;
+    height: 348px;
+  
+}
+
+.top{
+    width: 400x;
+    justify-content: center;
+ 
+}
+
+.top_home , .top_shop {
+    text-align:center ;
+
+}
+hr{
+ 
+    width: 340px;
+    
+}
+
+.bottom1{
+    display: none;
+}
+
+.product{
+    display: none;
+}
+
 }
