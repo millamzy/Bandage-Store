@@ -5,6 +5,9 @@ import Vector from '../../../public/images/Vector.png'
 import clock from '../../../public/images/clock.png'
 import grater from '../../../public/images/grater.png'
 const PracticeCard = () => {
+
+ 
+  
   return (
     <div className={partcardcss.movcard}>
           <div className={partcardcss.topmovcard}>
